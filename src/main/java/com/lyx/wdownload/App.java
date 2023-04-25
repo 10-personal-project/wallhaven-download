@@ -7,6 +7,7 @@ import com.lyx.thrid.hutool.core.io.FileUtil;
 import com.lyx.thrid.hutool.core.io.IoUtil;
 import com.lyx.thrid.hutool.core.lang.Console;
 import com.lyx.thrid.hutool.core.text.CharSequenceUtil;
+import com.lyx.thrid.hutool.core.util.RandomUtil;
 import com.lyx.thrid.hutool.core.util.StrUtil;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
@@ -21,6 +22,7 @@ import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Random;
 import java.util.stream.Collectors;
 
 public class App
@@ -104,7 +106,7 @@ public class App
 
         try
         {
-            Thread.sleep(2500);
+            Thread.sleep(RandomUtil.randomLong(2000, 3000));
         }
         catch (InterruptedException e)
         {
