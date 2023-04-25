@@ -61,6 +61,7 @@ public class App
             List<String> pageHref = getPageData(i);
             pageHref.forEach(App::downloadOnePicByPageHref);
         }
+        Console.log("下载完成");
     }
 
     /**
