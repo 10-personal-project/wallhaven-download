@@ -107,7 +107,7 @@ public class App
 
         try
         {
-            Thread.sleep(RandomUtil.randomLong(2000, 3000));
+            Thread.sleep(RandomUtil.randomLong(2600, 3500));
         }
         catch (InterruptedException e)
         {
