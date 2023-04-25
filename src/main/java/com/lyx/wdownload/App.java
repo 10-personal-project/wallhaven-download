@@ -44,7 +44,7 @@ public class App
      * 配置项 <br/>
      * 总页码，可以从wallhaven页面上获取
      */
-    private final static Integer pageNum = 1;
+    private final static Integer pageNum = 7;
 
     /**
      * 工具-RestTemplate
