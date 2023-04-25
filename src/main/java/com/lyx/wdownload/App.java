@@ -77,7 +77,8 @@ public class App
         }
         catch (IOException e)
         {
-            throw OptRuntimeException.getInstance("发生异常");
+            e.printStackTrace();
+            throw OptRuntimeException.getInstance("发生异常：{}", e.getMessage());
         }
 
         Elements elements = doc.select("section.thumb-listing-page ul li figure a.preview");
