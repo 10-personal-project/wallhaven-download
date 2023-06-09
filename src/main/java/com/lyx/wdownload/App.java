@@ -1,28 +1,20 @@
 package com.lyx.wdownload;
 
-import com.lyx.OptRuntimeException;
-import com.lyx.thrid.hutool.core.collection.CollUtil;
-import com.lyx.thrid.hutool.core.exceptions.ExceptionUtil;
+import com.lyx.common.OptRuntimeException;
 import com.lyx.thrid.hutool.core.io.FileUtil;
-import com.lyx.thrid.hutool.core.io.IoUtil;
 import com.lyx.thrid.hutool.core.lang.Console;
-import com.lyx.thrid.hutool.core.text.CharSequenceUtil;
 import com.lyx.thrid.hutool.core.util.RandomUtil;
 import com.lyx.thrid.hutool.core.util.StrUtil;
-import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
-
 import java.io.IOException;
 import java.util.List;
-import java.util.Random;
 import java.util.stream.Collectors;
 
 public class App
